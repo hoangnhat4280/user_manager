@@ -1,5 +1,4 @@
 package com.example.user_manager.model;
-
 public class User {
     protected int id;
     protected String name;
