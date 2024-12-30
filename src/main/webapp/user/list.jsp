@@ -9,6 +9,8 @@
 <body>
 <center>
     <h1>User Management</h1>
+    <a href="/users?action=create">Add new user</a>
+    <a href="/users?action=list">List user</a>
     <form method="get" action="users">
         <input type="hidden" name="action" value="search">
         <input type="text" name="country" placeholder="Search by country">

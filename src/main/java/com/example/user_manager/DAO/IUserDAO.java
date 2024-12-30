@@ -14,7 +14,7 @@ public interface IUserDAO {
 
     List<User> sortUsersByName();
 
-    boolean deleteUser(int id) throws SQLException;
+    void deleteUser(int id) throws SQLException;
 
-    boolean updateUser(User user) throws SQLException;
+    void updateUser(User user) throws SQLException;
 }

@@ -1,35 +1,37 @@
-/* General Page Styling */
+/* Tổng thể */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
-    color: #2c3e50;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Đổi màu gradient */
+    color: #333;  /* Màu chữ tối, dễ đọc */
 }
 
+/* Tiêu đề cấp 1 */
 h1 {
-    color: #34495e;
+    color: #1d3557;    /* Màu xanh đậm */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 20px 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2.2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* Tiêu đề cấp 2 */
 h2 {
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.8em;
-    color: #8e44ad;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #457b9d;    /* Xanh dương nhạt hơn */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Button, link */
 button, a {
     text-decoration: none;
-    color: white;
-    background: #3498db;
+    color: #fff;
+    background: #e76f51; /* Màu cam đất */
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 1em;
@@ -37,11 +39,12 @@ button, a {
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
     display: inline-block;
+    text-align: center;
 }
 
 button:hover, a:hover {
-    background: #2980b9;
-    transform: scale(1.1);
+    background: #f4a261; /* Màu cam nhẹ hơn khi hover */
+    transform: scale(1.08);
 }
 
 button {
@@ -53,12 +56,13 @@ form {
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
+/* Bảng trong form (nếu có) */
 form table {
     width: 100%;
 }
@@ -70,9 +74,10 @@ table th, table td {
 }
 
 table th {
-    color: #2c3e50;
+    color: #333;
 }
 
+/* Các ô input */
 input[type="text"], input[type="email"] {
     width: calc(100% - 20px);
     padding: 10px;
@@ -80,35 +85,37 @@ input[type="text"], input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 5px 0;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Bảng hiển thị (nếu không đặt trong form) */
 table {
     width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 table caption {
     font-size: 1.5em;
     font-weight: bold;
-    color: #2c3e50;
+    color: #1d3557;
     margin-bottom: 10px;
 }
 
+/* Ô tiêu đề bảng */
 table th {
-    background: #9b59b6;
-    color: white;
+    background: #457b9d;
+    color: #fff;
     text-transform: uppercase;
     padding: 10px;
     font-size: 0.9em;
 }
 
+/* Ô dữ liệu */
 table td {
     padding: 10px;
     font-size: 1em;
@@ -116,17 +123,19 @@ table td {
     border-bottom: 1px solid #ccc;
 }
 
+/* Dòng chẵn */
 table tr:nth-child(even) {
-    background: #f9f9f9;
+    background: #f7f7f7;
 }
 
+/* Hover trên dòng */
 table tr:hover {
-    background: #f1c40f;
-    color: white;
+    background: #2a9d8f;
+    color: #fff;
     transition: background 0.3s ease;
 }
 
-
+/* Responsive */
 @media (max-width: 768px) {
     form {
         width: 95%;
@@ -142,6 +151,6 @@ table tr:hover {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
